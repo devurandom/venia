@@ -121,6 +121,7 @@
 
                                           :venia/nested-field-arg-only (s/cat :venia/nested-field-root keyword?
                                                                               :args :venia/args)
+                                          :venia/nested-field-without-args (s/map-of keyword? :venia/fields)
                                           :venia/nested-field (s/cat :venia/nested-field-root keyword?
                                                                      :args (s/? :venia/args)
                                                                      :venia/nested-field-children :venia/fields)))

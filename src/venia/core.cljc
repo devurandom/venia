@@ -86,6 +86,10 @@
              :venia/field-with-data (str (when-let [alias (name (:field/alias value))]
                                            (str alias ":"))
                                          (fields->str (:field/data value)))
+             :venia/nested-field-without-args (str (name (first (keys value)))
+                                                   "{"
+                                                   (fields->str (first (vals value)))
+                                                   "}")
              :venia/nested-field (str (name (:venia/nested-field-root value))
                                       (when (:args value)
                                         (str "(" (arguments->str (:args value)) ")"))

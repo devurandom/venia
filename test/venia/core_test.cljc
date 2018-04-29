@@ -83,6 +83,11 @@
           query-str "{employee(id:1,active:true){name,address,friends{name,email}}}"]
       (is (= query-str (v/graphql-query data)))))
 
+  (testing "Should create a valid graphql string with nested fields as map."
+    (let [data {:venia/queries [[:employee {:id 1 :active true} [:name :address {:friends [:name :email]}]]]}
+          query-str "{employee(id:1,active:true){name,address,friends{name,email}}}"]
+      (is (= query-str (v/graphql-query data)))))
+
   (testing "Should create a valid graphql string with __typename meta field included"
     (let [data {:venia/queries [[:employee {:id 1 :active true} [:name :address :meta/typename [:friends [:meta/typename :name :email]]]]]}
           query-str "{employee(id:1,active:true){name,address,__typename,friends{__typename,name,email}}}"]
