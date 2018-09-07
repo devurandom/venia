@@ -2,6 +2,7 @@
 
 
 [![Clojars Project](https://img.shields.io/clojars/v/vincit/venia.svg)](https://clojars.org/vincit/venia)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdevurandom%2Fvenia.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdevurandom%2Fvenia?ref=badge_shield)
 
 
 [![Build Status](https://travis-ci.org/Vincit/venia.svg?branch=master)](https://travis-ci.org/Vincit/venia)
@@ -220,3 +221,6 @@ For example:
 Copyright © 2017 Vincit
 
 Distributed under the Eclipse Public License, the same as Clojure.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdevurandom%2Fvenia.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdevurandom%2Fvenia?ref=badge_large)
